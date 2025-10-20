@@ -1386,7 +1386,7 @@ function App() {
                 <img
                   src="https://res.cloudinary.com/dqbzzlxfq/image/upload/v1760658872/Captura_de_pantalla_2025-10-17_a_las_1.54.12_ezgvrd.png"
                   alt="AI Supera-T"
-                  className="h-12 sm:h-16 w-auto brightness-0 invert"
+                  className="h-12 sm:h-16 w-auto"
                 />
               </div>
               <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-4 lg:mb-6">
@@ -1450,23 +1450,16 @@ function App() {
               <h3 className="font-bold text-xl mb-6 text-white">Contacto</h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <Phone className="w-5 h-5 text-gold-400 mt-1" />
-                  <div>
-                    <p className="text-gray-300">+34 900 123 456</p>
-                    <p className="text-sm text-gray-500">Lun - Vie, 9:00 - 18:00</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
                   <Mail className="w-5 h-5 text-gold-400 mt-1" />
                   <div>
-                    <p className="text-gray-300">info@aisuperat.com</p>
+                    <p className="text-gray-300">ai@supera-t.es</p>
                     <p className="text-sm text-gray-500">Respuesta en 24h</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <MapPin className="w-5 h-5 text-gold-400 mt-1" />
                   <div>
-                    <p className="text-gray-300">Madrid, España</p>
+                    <p className="text-gray-300">Palma de Mallorca, España</p>
                     <p className="text-sm text-gray-500">Consultas presenciales</p>
                   </div>
                 </div>
