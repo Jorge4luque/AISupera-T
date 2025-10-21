@@ -257,7 +257,7 @@ function App() {
               <h1 
                 id="hero-title"
                 data-animate
-                className={`text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight transition-all duration-700 delay-200 ${
+                className={`text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight transition-all duration-700 delay-200 ${
                   visibleElements.has('hero-title') ? 'animate-fade-in-up' : 'opacity-0'
                 }`}
               >
@@ -270,7 +270,7 @@ function App() {
               <p 
                 id="hero-description"
                 data-animate
-                className={`text-lg sm:text-xl lg:text-2xl text-gray-600 leading-relaxed max-w-2xl transition-all duration-700 delay-400 ${
+                className={`text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed max-w-2xl transition-all duration-700 delay-400 ${
                   visibleElements.has('hero-description') ? 'animate-fade-in-up' : 'opacity-0'
                 }`}
               >
@@ -279,42 +279,42 @@ function App() {
               </p>
 
               {/* Enhanced Stats */}
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
                 <div className="text-center lg:text-left">
-                  <div className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-gold-500 to-gold-600 bg-clip-text text-transparent mb-2">80%</div>
-                  <div className="text-xs sm:text-sm lg:text-base text-gray-600 font-medium">Reducción de tareas manuales</div>
+                  <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-gold-500 to-gold-600 bg-clip-text text-transparent mb-1 sm:mb-2">80%</div>
+                  <div className="text-xs sm:text-sm lg:text-base text-gray-600 font-medium leading-tight">Reducción de tareas manuales</div>
                 </div>
                 <div className="text-center lg:text-left">
-                  <div className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-gold-500 to-gold-600 bg-clip-text text-transparent mb-2">24/7</div>
-                  <div className="text-xs sm:text-sm lg:text-base text-gray-600 font-medium">Operación automatizada</div>
+                  <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-gold-500 to-gold-600 bg-clip-text text-transparent mb-1 sm:mb-2">24/7</div>
+                  <div className="text-xs sm:text-sm lg:text-base text-gray-600 font-medium leading-tight">Operación automatizada</div>
                 </div>
                 <div className="text-center lg:text-left">
-                  <div className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-gold-500 to-gold-600 bg-clip-text text-transparent mb-2">3x</div>
-                  <div className="text-xs sm:text-sm lg:text-base text-gray-600 font-medium">Aumento de productividad</div>
+                  <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-gold-500 to-gold-600 bg-clip-text text-transparent mb-1 sm:mb-2">3x</div>
+                  <div className="text-xs sm:text-sm lg:text-base text-gray-600 font-medium leading-tight">Aumento de productividad</div>
                 </div>
                 <div className="text-center lg:text-left">
-                  <div className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-gold-500 to-gold-600 bg-clip-text text-transparent mb-2">95%</div>
-                  <div className="text-xs sm:text-sm lg:text-base text-gray-600 font-medium">Satisfacción del cliente</div>
+                  <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-gold-500 to-gold-600 bg-clip-text text-transparent mb-1 sm:mb-2">95%</div>
+                  <div className="text-xs sm:text-sm lg:text-base text-gray-600 font-medium leading-tight">Satisfacción del cliente</div>
                 </div>
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <button
                 onClick={() => scrollToSection('contacto')}
-                  className="group bg-gradient-to-r from-gold-500 to-gold-600 text-black px-8 py-4 rounded-full hover:from-gold-400 hover:to-gold-500 transition-all duration-300 flex items-center justify-center space-x-3 transform hover:scale-105 font-bold text-lg shadow-xl hover:shadow-2xl relative overflow-hidden"
+                  className="group bg-gradient-to-r from-gold-500 to-gold-600 text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:from-gold-400 hover:to-gold-500 transition-all duration-300 flex items-center justify-center space-x-2 sm:space-x-3 transform hover:scale-105 font-bold text-base sm:text-lg shadow-xl hover:shadow-2xl relative overflow-hidden"
                 >
                   <span className="relative z-10">Comenzar Transformación</span>
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200 relative z-10" />
+                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-200 relative z-10" />
                   <div className="absolute inset-0 bg-gradient-to-r from-gold-400 to-gold-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </button>
                 
                 <button
                   onClick={() => scrollToSection('casos')}
-                  className="group border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full hover:border-gold-500 hover:text-gold-600 transition-all duration-300 flex items-center justify-center space-x-3 font-semibold text-lg"
+                  className="group border-2 border-gray-300 text-gray-700 px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:border-gold-500 hover:text-gold-600 transition-all duration-300 flex items-center justify-center space-x-2 sm:space-x-3 font-semibold text-base sm:text-lg"
                 >
                   <span>Ver Casos de Éxito</span>
-                  <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
+                  <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-200" />
               </button>
             </div>
 
@@ -384,7 +384,7 @@ function App() {
               <span>Nuestros Servicios</span>
             </div>
             
-            <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
               Servicios que{' '}
               <span className="bg-gradient-to-r from-gold-500 to-gold-600 bg-clip-text text-transparent">
                 Transforman
@@ -392,7 +392,7 @@ function App() {
               tu Negocio
             </h2>
             
-            <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Ofrecemos soluciones completas de inteligencia artificial y automatización, 
               diseñadas específicamente para las necesidades de tu industria.
             </p>
@@ -1181,7 +1181,7 @@ function App() {
               <span>Contacto</span>
             </div>
             
-            <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
               ¿Listo para{' '}
               <span className="text-gold-600">
                 Transformar
@@ -1189,7 +1189,7 @@ function App() {
               tu Negocio?
             </h2>
             
-            <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Solicita una asesoría gratuita y descubre cómo nuestras soluciones de IA 
               pueden revolucionar tu empresa.
             </p>
