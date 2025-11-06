@@ -1,16 +1,48 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Supera-T Landing Page</title>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Supera-T Landing Page</title>
+
+    <!-- Verificación de Google -->
     <meta name="google-site-verification" content="8HjhoIM5Qitekuk7OOgqqHpMRXRRmChv0t2O-PJUvIY" />
-    
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <!-- App principal React -->
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- 💬 Typebot: botón flotante responsive -->
+    <script>
+      const typebotInitScript = document.createElement("script");
+      typebotInitScript.type = "module";
+      typebotInitScript.innerHTML = `
+        import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0/dist/web.js'
+
+        // Detectar si el usuario está en móvil
+        const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+        Typebot.initBubble({
+          typebot: "lead-generation-jtf2z4f",
+          theme: {
+            button: {
+              backgroundColor: "#D09C46",
+              iconColor: "#ffffff",
+              // Tamaño adaptativo
+              size: isMobile ? "52px" : "64px",
+              position: "bottom-right",
+              // Espaciado distinto según dispositivo
+              bottom: isMobile ? "16px" : "24px",
+              right: isMobile ? "16px" : "24px",
+            },
+          },
+        });
+      `;
+      document.body.append(typebotInitScript);
+    </script>
+  </body>
 </html>
