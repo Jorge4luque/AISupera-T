@@ -91,7 +91,7 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-gold-400 mt-1" />
                 <div>
-                  <p className="text-gray-300">Palma de Mallorca, España</p>
+                  <p className="text-gray-300">Av. de la Fuente, 36, 18210 Peligros, Granada, 18210 Peligros</p>
                   <p className="text-sm text-gray-500">Consultas presenciales</p>
                 </div>
               </div>

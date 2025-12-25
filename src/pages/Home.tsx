@@ -1071,7 +1071,7 @@ function Home() {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900 mb-1">Ubicación</h4>
-                    <p className="text-gray-600">Palma de Mallorca, España</p>
+                    <p className="text-gray-600">Av. de la Fuente, 36, 18210 Peligros, Granada, 18210 Peligros</p>
                     <p className="text-sm text-gray-500">Consultas presenciales disponibles</p>
                   </div>
                 </div>
